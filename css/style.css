@@ -1,1 +1,107 @@
+/* ======= Basic Reset & Font Setup ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #F2E9E4;
+  color: #22223B;
+  line-height: 1.6;
+}
+
+/* ======= Navbar ======= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #4A4E69;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #22223B;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4A4E69;
+}
+
+/* ======= Hero Section ======= */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #ffffff, #F2E9E4);
+}
+
+.hero-content .small-name {
+  font-size: 1.2rem;
+  color: #9A8C98;
+}
+
+.hero-content .big-name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #4A4E69;
+  margin: 0.5rem 0;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #C9ADA7;
+  margin-top: 0.5rem;
+}
+
+/* ======= Sections ======= */
+section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #4A4E69;
+  margin-bottom: 1rem;
+}
+
+/* ======= Footer ======= */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  color: #9A8C98;
+  margin-top: 2rem;
+}
 
