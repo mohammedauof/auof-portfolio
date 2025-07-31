@@ -158,6 +158,41 @@ h2 {
   line-height: 1.7;
 }
 
+/*Projects*/
+#projects {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.project-card h3 {
+  color: #4E54C8;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4E54C8;
+  text-decoration: underline;
+}
+
+.coming-soon {
+  color: #666;
+  margin-top: 20px;
+}
+
+
 /*Skills*/
 #skills {
   padding: 60px 20px;
