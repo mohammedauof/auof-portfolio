@@ -95,6 +95,45 @@ h2 {
   margin-bottom: 1rem;
 }
 
+/*Certifications*/
+#certifications {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+#certifications h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.certificate {
+  display: inline-block;
+  width: 250px;
+  margin: 15px;
+  text-align: center;
+}
+
+.certificate img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.certificate img:hover {
+  transform: scale(1.05);
+}
+
+.certificate p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+
 /* ======= Footer ======= */
 footer {
   text-align: center;
