@@ -89,7 +89,7 @@ body {
 /* ======= Sections ======= */
 section {
   padding: 4rem 2rem;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -158,6 +158,78 @@ h2 {
   line-height: 1.7;
 }
 
+/*Skills*/
+#skills {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-category {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  padding: 25px 20px;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+}
+
+.skill-category h3 {
+  color: #4E54C8;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-category ul li {
+  padding: 8px 0;
+  color: #333;
+  font-weight: 500;
+}
+
+/*Resume*/
+#resume {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#resume .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #4E54C8;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#resume .btn:hover {
+  background: #6C70F3;
+}
+
+
 
 /*Certifications*/
 #certifications {
@@ -195,6 +267,52 @@ h2 {
   margin-top: 10px;
   font-size: 0.95rem;
   color: #444;
+}
+
+/*Contact*/
+#contact {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.coming-soon {
+  background: #fff3cd;
+  color: #856404;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.direct-contact {
+  margin-top: 30px;
+}
+
+.direct-contact a {
+  color: #4e54c8;
+  text-decoration: none;
+}
+.direct-contact a:hover {
+  text-decoration: underline;
 }
 
 
