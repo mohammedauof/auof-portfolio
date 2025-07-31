@@ -284,6 +284,7 @@ h2 {
   width: 250px;
   margin: 15px;
   text-align: center;
+  vertical-align: top;
 }
 
 .certificate img {
@@ -303,6 +304,19 @@ h2 {
   font-size: 0.95rem;
   color: #444;
 }
+
+#achievements {
+  padding: 50px 20px;
+  background-color: #ffffff; /* or slightly different like #f0f2f5 */
+  text-align: center;
+}
+
+#achievements h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
 
 /*Contact*/
 #contact {
