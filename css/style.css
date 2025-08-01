@@ -57,43 +57,41 @@ body {
   color: #4A4E69;
 }
 
-/* Default hidden hamburger */
-.hamburger {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: #4E54C8;
+/* Default (hidden on small screens) */
+.nav-links {
+  display: flex;
+  gap: 20px;
 }
 
-/* Responsive styles */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
+    background-color: white;
     position: absolute;
-    top: 70px; /* adjust if navbar height changes */
+    top: 60px;
     right: 30px;
-    background: white;
-    padding: 15px 20px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    z-index: 1000;
-    transition: all 0.3s ease-in-out;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
   }
 
-  .nav-links.show {
+  .nav-links.active {
     display: flex;
   }
 
   .hamburger {
     display: block;
   }
-
-  .navbar {
-    justify-content: space-between;
-    align-items: center;
-  }
 }
+
 
 
 /* ======= Hero Section ======= */
