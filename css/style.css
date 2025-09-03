@@ -334,7 +334,7 @@ h2 {
 }
 
 .skill-card:hover img {
-  filter: drop-shadow(0 0 8px #ffe3bd) drop-shadow(0 0 15px #ffdfa3);
+  filter: drop-shadow(0 0 8px #bdc0ff) drop-shadow(0 0 15px #696ec6);
   transform: scale(1.1);
 }
 
