@@ -13,8 +13,10 @@ function rotateTagline() {
   taglineElement.textContent = taglines[taglineIndex];
 }
 
-setInterval(rotateTagline, 3000); // Change tagline every 3 seconds
+setInterval(rotateTagline, 2000); // Change tagline every 2 seconds
 
+
+/* Back To Top Button */
 const backToTopBtn = document.getElementById("backToTop");
 
 window.onscroll = function () {
@@ -30,6 +32,8 @@ backToTopBtn.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+
+/* Hamburger on Mobile */
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.getElementById("hamburger");
   const navLinks = document.querySelector(".nav-links");
