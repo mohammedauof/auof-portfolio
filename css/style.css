@@ -126,7 +126,7 @@ body {
 /* ======= Sections ======= */
 section {
   padding: 4rem 2rem;
-  max-width: 90vw;
+  max-width: 80vw;
   margin: auto;
 }
 
@@ -392,7 +392,7 @@ h2 {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
-  max-width: 900px;
+  max-width: 90vw;
   overflow: hidden;
   transition: transform 0.3s ease;
   border-left: 10px solid #22223B;
