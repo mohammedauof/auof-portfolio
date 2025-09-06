@@ -559,6 +559,27 @@ footer {
   margin-top: 2rem;
 }
 
+.footer-icons {
+  margin-bottom: 1rem;
+}
+
+.footer-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-icons img {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+
 /*Floating Button*/
 #backToTop {
   position: fixed;
