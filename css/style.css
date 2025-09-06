@@ -126,7 +126,7 @@ body {
 /* ======= Sections ======= */
 section {
   padding: 4rem 2rem;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -548,8 +548,7 @@ h2 {
   text-decoration: underline;
 }
 
-
-/* ======= Footer ======= */
+/*  Footer  */
 footer {
   text-align: center;
   padding: 2rem;
