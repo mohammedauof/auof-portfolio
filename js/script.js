@@ -64,3 +64,36 @@ const observer = new IntersectionObserver((entries) => {
 reveals.forEach(reveal => {
   observer.observe(reveal);
 });
+
+
+/* Stats Numbers rise */
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+  let animated = false; // prevents multiple triggers
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const target = +counter.getAttribute("data-target");
+      const duration = 1500; // total animation time in ms
+      const stepTime = Math.max(10, duration / target);
+      let count = 0;
+
+      const updateCounter = setInterval(() => {
+        count++;
+        counter.textContent = count + (target === 100 ? "%" : "+");
+        if (count >= target) clearInterval(updateCounter);
+      }, stepTime);
+    });
+  };
+
+  // Trigger animation when stats section is visible
+  const statsSection = document.querySelector("#stats");
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting && !animated) {
+      animateCounters();
+      animated = true;
+    }
+  }, { threshold: 0.5 });
+
+  observer.observe(statsSection);
+});
