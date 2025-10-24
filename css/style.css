@@ -271,6 +271,18 @@ h2 {
   text-align: left;
 }
 
+.project-card.featured {
+  border: 2px solid #4E54C8;
+  box-shadow: 0 0 15px rgba(78, 84, 200, 0.2);
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
+
+.project-card.featured:hover {
+  box-shadow: 0 0 25px rgba(78, 84, 200, 0.4);
+  transform: scale(1.05);
+}
+
 .project-card h3 {
   color: #4E54C8;
   margin-bottom: 10px;
@@ -283,11 +295,15 @@ h2 {
   text-decoration: underline;
 }
 
-.coming-soon {
+.project-card .tech-stack {
+  font-size: 0.9rem;
   color: #666;
-  margin-top: 20px;
+  margin-top: 8px;
 }
 
+.project-links a{
+  margin-right: 10px;
+}
 
 /* Skills */
 #skills {
@@ -513,6 +529,7 @@ h2 {
   color: #856404;
   padding: 10px 15px;
   margin-bottom: 20px;
+  margin-top: 15px;
   border-radius: 6px;
   display: inline-block;
   font-weight: 500;
