@@ -553,6 +553,15 @@ h2 {
   font-size: 16px;
 }
 
+.contact-form button{
+  transition: 0.3s;
+}
+
+.contact-form button:hover{
+  transform: scaleX(1.02);
+  cursor: pointer;
+}
+
 #form-status {
   margin-top: 12px;
   font-weight: 500;
