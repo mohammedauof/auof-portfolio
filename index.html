@@ -366,13 +366,14 @@
 
   <section id="contact">
     <h2>Contact Me</h2>
-    <p class="coming-soon">⚠️ Contact form currently unavailable. Please reach out via email or LinkedIn below.</p>
+    <!-- <p class="coming-soon">⚠️ Contact form currently unavailable. Please reach out via email or LinkedIn below.</p> -->
 
-    <form class="contact-form" onsubmit="return false;">
-      <input type="text" placeholder="Your Name" disabled>
-      <input type="email" placeholder="Your Email" disabled>
-      <textarea placeholder="Your Message" disabled></textarea>
-      <button type="submit" disabled>Send Message</button>
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="9332f90a-3443-4b2b-bcb4-425e695d9c24">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
 
     <div class="direct-contact">
