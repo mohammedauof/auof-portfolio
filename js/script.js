@@ -102,7 +102,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // Contact Form Submission Handling
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".contact-form");
-  const status = document.getElementById("form-status");
+  const toast = document.getElementById("toast");
+  const toastMsg = document.getElementById("toast-message");
+  const toastTimer = document.getElementById("toast-timer");
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -117,28 +119,28 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       if (response.ok) {
-        status.textContent = "✅ Message sent successfully! We'll get back to you soon.";
-        status.className = "show success";
+        showToast("✅ Message sent successfully!");
         form.reset();
       } else {
-        status.textContent = "❌ Oops! Something went wrong. Please try again.";
-        status.className = "show error";
+        showToast("❌ Something went wrong. Please try again.");
       }
-
-      // Fade out after 5 seconds
-      setTimeout(() => {
-        status.className = "";
-        status.textContent = "";
-      }, 5000);
-
     } catch (error) {
-      status.textContent = "⚠️ Network error. Please check your connection.";
-      status.className = "show error";
-
-      setTimeout(() => {
-        status.className = "";
-        status.textContent = "";
-      }, 5000);
+      showToast("⚠️ Network error. Please check your connection.");
     }
   });
+
+  function showToast(message) {
+    toastMsg.textContent = message;
+    toast.classList.add("show");
+    toastTimer.style.width = "0%";
+
+    // Force reflow before animation
+    void toastTimer.offsetWidth;
+    toastTimer.style.width = "100%";
+
+    setTimeout(() => {
+      toast.classList.remove("show");
+      toastTimer.style.width = "0%";
+    }, 5000);
+  }
 });
