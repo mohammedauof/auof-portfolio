@@ -538,8 +538,8 @@ h2 {
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
-  opacity: 0.6;
-  pointer-events: none;
+  /* opacity: 0.6;
+  pointer-events: none; */
 }
 
 .contact-form input,
@@ -552,6 +552,28 @@ h2 {
   border: 1px solid #ccc;
   font-size: 16px;
 }
+
+#form-status {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#form-status.show {
+  opacity: 1;
+}
+
+#form-status.success {
+  color: #28a745; /* green */
+}
+
+#form-status.error {
+  color: #dc3545; /* red */
+}
+
+
 
 .direct-contact {
   margin-top: 30px;

@@ -97,3 +97,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(statsSection);
 });
+
+
+// Contact Form Submission Handling
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".contact-form");
+  const status = document.getElementById("form-status");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        status.textContent = "✅ Message sent successfully! We'll get back to you soon.";
+        status.className = "show success";
+        form.reset();
+      } else {
+        status.textContent = "❌ Oops! Something went wrong. Please try again.";
+        status.className = "show error";
+      }
+
+      // Fade out after 5 seconds
+      setTimeout(() => {
+        status.className = "";
+        status.textContent = "";
+      }, 5000);
+
+    } catch (error) {
+      status.textContent = "⚠️ Network error. Please check your connection.";
+      status.className = "show error";
+
+      setTimeout(() => {
+        status.className = "";
+        status.textContent = "";
+      }, 5000);
+    }
+  });
+});
