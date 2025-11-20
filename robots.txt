@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://mohammedauof.github.io/auof-portfolio/sitemap.xml
