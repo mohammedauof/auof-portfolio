@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: /assets/certificates/
 
 Sitemap: https://mohammedauof.github.io/auof-portfolio/sitemap.xml
