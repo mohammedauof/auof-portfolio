@@ -1,7 +1,7 @@
 /* Changing taglines */
 const taglines = [
   "Cybersecurity Enthusiast",
-  "Frontend Developer in Progress",
+  "ML Developer in Progress",
   "Loves Clean UI & Ethical Hacking",
   "Building Secure and Beautiful Web Experiences"
 ];
