@@ -1,9 +1,9 @@
 /* Changing taglines */
 const taglines = [
-  "Cybersecurity Enthusiast",
-  "ML Developer in Progress",
-  "Loves Clean UI & Ethical Hacking",
-  "Building Secure and Beautiful Web Experiences"
+  "Cloud Security & IAM Enthusiast",
+  "Access Control and Identity Security",
+  "Secure Systems and Least Privilege",
+  "Learning Cloud Security in Practice"
 ];
 
 let taglineIndex = 0;
