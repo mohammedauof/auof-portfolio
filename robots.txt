@@ -1,6 +1,4 @@
 User-agent: *
 Disallow: /assets/certificates/
-Disallow: /assets/images
-Disallow: /assets/resume
 
 Sitemap: https://auof.in/sitemap.xml
